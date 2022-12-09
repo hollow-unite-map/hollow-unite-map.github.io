@@ -1,0 +1,216 @@
+<head>
+	<title>Unite Coaching Map</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<meta charset="UTF-8">
+<meta name="description" content="Free coaching map">
+<meta name="keywords" content="pokemon unite, unite, rayquaza, sky, pilar map">
+<link rel="stylesheet" href="style.css" />
+<div id="cursor" class="inactiveCursor"></div>
+<div class="app">
+	<div class="btnholder" >
+		<div class="mirrorbtn"></div>
+		<div class="timerbtn">
+			<div id="dec-time">-</div><span id="time">10:00</span>
+			<div id="inc-time">+</div>
+		</div>
+		<div class="resetbtn"></div>
+	</div>
+	<img class="mbg" src="/resources/web/map.png" />
+
+	<div class="map-cont initial" data-time="600">
+		<div class="marker regice" data-toggle="tooltip"
+			title="Grants EXP to the team that secures it. Also increases their HP recovery speed for 90 seconds. Randomly rotates with Regirock and Registeel."
+			style="top: 87%; left: 49%;"></div>
+		<div class="marker registeel" data-toggle="tooltip"
+			title="Grants EXP to the team that secures it. Also gives them increased Attack and Sp. Attack for 90 seconds. Randomly rotates with Regirock and Regice."
+			style="top: 85%; left: 45%;"></div>
+		<div class="marker regirock" data-toggle="tooltip"
+			title="Grants EXP to the team that secures it. Also gives them increased Defense and Sp. Defense for 90 seconds. Randomly rotates with Regice and Registeel."
+			style="top: 85%; left: 53%;"></div>
+
+		<div class="marker regieleki" data-toggle="tooltip"  data-placement="bottom"
+			title="Heads towards an enemy goal zone to make it defenseless for 25 seconds. Aids the allied team while pushing."
+			style="top:8%; left: 49%;"></div>
+		<div class="marker rayquaza" data-toggle="tooltip"
+			title="Appears during the Final Stretch (2:00). Grants a shield to the allied team that negates damage and protects the Pokemon from getting interrupted when scoring. Reduces the charge time by half. Stacks with Goal-Getter. As Rayquaza appears, air currents appears in fixed areas of the map that grants movement speed increase. The number of air currents depends on the number of goal zones destroyed."
+			style="top: 41.5%; left: 48%;"></div>
+
+		<!--first bunnelbys-->
+
+
+		<div class="marker bunnelby no-respawn" style="top: 52%;  left: 19%;"></div>
+		<div class="marker bunnelby no-respawn" style="top: 38%; left: 19%;"></div>
+
+		<!--second bunnelbys-->
+		<div class="marker bunnelby no-respawn" style="top: 57.5%; left: 23%;"></div>
+		<div class="marker bunnelby no-respawn" style="top: 30.5%; left: 24%;"></div>
+
+		<!--third bunnelbys-->
+
+
+		<div class="marker bunnelby no-respawn" style="top: 23.5%; left: 36%;"></div>
+		<div class="marker bunnelby no-respawn" style="top: 20.5%; left: 36%;"></div>
+		<div class="marker bunnelby no-respawn" style="top: 69.5%; left: 34.5%;"></div>
+		<div class="marker bunnelby no-respawn" style="top: 67%; left: 35.5%;"></div>
+
+		<!--line bunnelbys-->
+
+
+
+		<div class="marker bunnelby flip no-respawn" style="top: 57.5%; left: 77%;"></div>
+		<div class="marker bunnelby flip no-respawn" style="top: 50.5%; left: 79.5%;"></div>
+		<div class="marker bunnelby flip no-respawn" style="top: 35.5%; left: 79%;"></div>
+		<div class="marker bunnelby flip no-respawn" style="top: 29.5%; left: 75%;"></div>
+		<div class="marker bunnelby flip no-respawn" style="top: 23%; left: 63%;"></div>
+		<div class="marker bunnelby flip no-respawn" style="top: 20%; left: 63%;"></div>
+		<div class="marker bunnelby flip no-respawn" style="top: 70.5%; left: 63.5%;"></div>
+		<div class="marker bunnelby flip no-respawn" style="top: 66.5%; left: 63.5%;"></div>
+		<div class="marker bunnelby flip" style="top: 63%; left: 43.5%;"></div>
+		<div class="marker bunnelby flip" style="top: 63%; left: 54.5%;"></div>
+		<div class="marker bunnelby flip" style="top: 15%; left: 50%;"></div>
+		<div class="marker Indeedee" style="top: 77.5%; left: 43.5%;"></div>
+		<div class="marker Indeedee" style="top: 75.5%; left: 49.5%;"></div>
+		<div class="marker Indeedee flip" style="top: 77.5%; left: 54.5%;"></div>
+		<div class="marker Indeedee" style="top: 62.5%; left: 49.5%;"></div>
+		<div class="marker baltoy flip" style="top: 44.5%; left: 43%;"></div>
+		<div class="marker baltoy" style="top: 44.5%; left: 56%;"></div>
+		<div class="marker baltoy flip" style="top: 32.5%; left: 49.5%;"></div>
+		<div class="marker baltoy" style="top: 56%; left: 49.5%;"></div>
+		<div class="marker baltoy" style="top: 25.5%; left: 49.5%;"></div>
+		<div class="marker baltoy" style="top: 16%; left: 64.5%;"></div>
+		<div class="marker baltoy" style="top: 76.5%; left: 65%;"></div>
+		<div class="marker baltoy flip" style="top: 49.5%; left: 72.5%;"></div>
+		<div class="marker baltoy flip" style="top: 39%; left: 72.5%;"></div>
+		<div class="marker baltoy flip" style="top: 15.5%; left: 34.5%;"></div>
+		<div class="marker baltoy flip" style="top: 76%; left: 34.5%;"></div>
+		<div class="marker baltoy" style="top:49%; left: 27.5%;"></div>
+		<div class="marker baltoy" style="top: 38%; left: 27.5%;"></div>
+
+		<div class="marker swablu" style="top: 22%; left: 50%;"></div>
+		<div class="marker swablu" style="top: 21%; left: 47.5%;"></div>
+		<div class="marker swablu" style="top: 21%; left: 52.5%;"></div>
+		<div class="marker altaria" style="top: 19.5%; left: 50%;"></div>
+
+		<div class="marker swablu mid" style="top: 48%; left: 49.5%;"></div>
+		<div class="marker swablu mid" style="top: 44.5%; left: 47.5%;"></div>
+		<div class="marker swablu mid" style="top: 44.5%; left: 51.5%;"></div>
+		<div class="marker altaria mid" style="top: 43.5%; left: 49.5%;"></div>
+
+		<div class="marker swablu" style="top: 71%; left: 47.5%;"></div>
+		<div class="marker swablu" style="top: 73.5%; left: 49.5%;"></div>
+		<div class="marker swablu" style="top: 71%; left: 51.5%;"></div>
+		<div class="marker altaria" style="top: 70.5%; left: 49%;"></div>
+
+		<div data-toggle="tooltip"
+			title="Grants the orange aura. While your Pokemon has this aura, basic attacks deal extra damage and decreases the movement speed of opposing Pokemon for a short time.!"
+			class="marker escavalier" style="top: 33%;left: 34%;"></div>
+
+		<div data-toggle="tooltip"
+			title="Grants the orange aura. While your Pokemon has this aura, basic attacks deal extra damage and decreases themovement speed of opposing Pokemon for a short time.!"
+			class="marker escavalier flip" style="top: 33%;left: 64%;">
+		</div>
+
+		<div data-toggle="tooltip"
+			title=" Grants the purple aura. While your Pokemon has this aura, move cooldowns are reduced for a short time."
+			class="marker accelgor flip" style="top: 50%;left: 64.5%;"></div>
+		<div data-toggle="tooltip" class="marker accelgor"
+			title="Grants the purple aura. While your Pokemon has this aura, move cooldowns are reduced for a short time."
+			style="top: 51%;left: 34%;"></div>
+
+		<div class="marker xatu no-respawn" style="top: 44%; left: 26%;"></div>
+		<div class="marker xatu flip no-respawn" style="top: 44%; left: 73.5%;"></div>
+
+
+ 
+		<div class="marker bunnelby " style="top: 27%;left: 43.5%;"></div>
+ 
+		<div class="marker bunnelby flip" style="top: 27.5%;left: 54%;"></div>
+
+		<div id="fbott1" onclick="updateMapState(this)" class="friendlygoal goal" style="top: 68%; left: 39%;"></div>
+		<div id="fbott2" onclick="updateMapState(this)" class="friendlygoal goal" style="top: 60%; left: 25%;"></div>
+		<div id="ftopt2" onclick="updateMapState(this)" class="friendlygoal goal" style="top: 25%; left: 26.5%;"></div>
+		<div id="ftopt1" onclick="updateMapState(this)" class="friendlygoal goal" style="top: 18%; left: 40%;"></div>
+		<div class="friendlygoal goal" style="top: 43%; left: 17%;"></div>
+
+		<div id="ebott2" onclick="updateMapState(this)" class="enemygoal goal" style="top: 60%; left: 72%;"></div>
+		<div id="etopt2" onclick="updateMapState(this)" class="enemygoal goal" style="top: 24.5%; left: 70%;"></div>
+		<div id="ebott1" onclick="updateMapState(this)" class="enemygoal goal" style="top: 68%; left: 57%;"></div>
+		<div id="etopt1" onclick="updateMapState(this)" class="enemygoal goal" style="top: 18%; left: 57%;"></div>
+		<div class="enemygoal goal" style="top: 41%; left: 80%;"></div>
+
+ 
+		<div class="marker Indeedee ft1 flip" style="top: 25.5%; left: 21%;"></div>
+		<div class="marker Indeedee ft1 flip" style="top: 32.5%; left: 18.5%;"></div>
+		<div class="marker Indeedee fb1 flip" style="top: 59%; left: 16%;"></div>
+		<div class="marker Indeedee fb1 flip" style="top: 65%; left: 19.5%;"></div>
+
+		
+		<div class="marker Indeedee et1 flip" style="top: 24%; left: 77%;"></div>
+		<div class="marker Indeedee et1 flip" style="top: 30%; left: 81%;"></div>
+
+		<div class="marker Indeedee eb1 flip" style="top: 59%; left: 84%;"></div>
+		<div class="marker Indeedee eb1 flip" style="top: 64%; left: 80%;"></div>
+
+		<!--
+		<div class="information" style="top: 85%; left: 1%;">
+		<table border="0">
+			<tr>
+				<td>Bunnealy</td> 
+				<td>each 2 mins</td>
+			</tr>
+			<tr>
+				<td>Altaria</td> 
+				<td>8:50</td>
+			</tr>
+			<tr>
+				<td>Regis</td> 
+				<td>7:00</td>
+			</tr>
+			<tr>
+				<td>Rayquaza</td> 
+				<td>2:00</td>
+			</tr>
+		</table>
+		</div>
+		-->
+		
+	</div>
+</div>
+<div class="draggable-container blue-side">
+
+</div>
+<div class="draggable-container red-side">
+
+</div>
+<a href="#" >
+	<div class="team"><span>Modified by: hollow</span></div>
+</a>
+<div class="author"><span>By: 404 / EndOfFile<span></div>
+<script>
+	const sides = ["red-side", "blue-side"]
+	const pokemon = [
+		["003", "025", "038-a", "282", "658", "700", "724", "815", "845", "884", "196", "655", "471", "151","302"],
+		["009", "080", "143", "473", "558", "709", "820", "184", "794", "248", "212","892"],
+		["006", "068", "147", "445", "448", "681", "763"],
+		["040", "122", "242", "720", "830","302"],
+		["094", "807", "663", "359", "085","571"]
+	]
+	for (let s of sides) {
+		let cont = document.getElementsByClassName("draggable-container " + s)[0]
+		for (let category of pokemon) {
+			let di = document.createElement("div")
+			di.className = "draggable-items " + s
+			for (let num of category) {
+				let mon = document.createElement("div")
+				mon.className = "draggable"
+				mon.style = 'background-image: url("/resources/pokemon/' + num + '.png");'
+				di.appendChild(mon)
+			}
+			cont.appendChild(di)
+		}
+	}
+</script>
+<script type="text/javascript" src="script.js"></script>
